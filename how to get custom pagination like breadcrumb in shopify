@@ -1,0 +1,27 @@
+for blog page 
+
+
+                {% comment %}
+              Pagination links
+            {% endcomment %}
+            <div class="custom_pagination-for-blog">
+              <a href="/>Home</a>
+              <span>&gt;</span>
+              <a href="/blogs">Blogs</a>
+              <span>&gt;</span>
+              <a href="/blogs/{{ blog.handle }}">{{ blog.title }}</a>
+              <span>&gt;</span>
+              <a href="">{{ page_title }}</a>
+            </div>
+
+for product page 
+
+  <div class="custom-pagination-for-product">
+      <div class="set_pagination">
+        <a href="/">Home</a>
+         <span>&gt;</span>
+          <a href="/products">Products</a>
+          <span>&gt;</span>
+      <a href="{{ product.url }}" class="current-product">{{ product.title }}</a>
+  </div>
+ </div>
